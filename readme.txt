@@ -4,7 +4,7 @@ Donate link: http://wordpress.paulrosen.net/plugins/abc-notation
 Tags: music abc-notation sheet-music abcjs
 Requires at least: 4.0
 Tested up to: 4.1
-Stable tag: 1.12
+Stable tag: 1.12.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -35,6 +35,9 @@ The plugin includes the [abcjs](http://abcjs.net/) JavaScript library. The strin
 There is much written about ABC Notation around the web. You can start [here](http://abcnotation.com)
 
 == Upgrade Notice ==
+
+= 1.12.1 =
+* Get rid of smart quotes.
 
 = 1.12 =
 * Initial version
