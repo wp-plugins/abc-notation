@@ -33,7 +33,7 @@ defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 add_action('wp_enqueue_scripts','abcjs_loader');
 
 function abcjs_loader() {
-	wp_enqueue_script( 'abcjs-plugin', plugins_url( '/abcjs_basic_1.12-min.js', __FILE__ ));
+	wp_enqueue_script( 'abcjs-plugin', plugins_url( '/abcjs_basic_2.0-min.js', __FILE__ ));
 }
 
 //-- Interpret the [abcjs] shortcode
