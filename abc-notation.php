@@ -3,7 +3,7 @@
 Plugin Name: ABC Notation
 Plugin URI: http://wordpress.paulrosen.net/plugins/abc-notation
 Description: Include sheet music on your WordPress site by simply specifying the ABC style string in the shortcode <strong>[abcjs]</strong>. For a complete description of the syntax, see the <a href="http://wordpress.paulrosen.net/plugins/abc-notation">Plugin Site</a>.
-Version: 1.12.1
+Version: 2.0
 Author: Paul Rosen
 Author URI: http://paulrosen.net
 License: GPL version 2 or later - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
