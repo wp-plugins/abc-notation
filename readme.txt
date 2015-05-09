@@ -3,8 +3,8 @@ Contributors: paulrosen
 Donate link: http://wordpress.paulrosen.net/plugins/abc-notation
 Tags: music abc-notation sheet-music abcjs
 Requires at least: 4.0
-Tested up to: 4.1
-Stable tag: 2.0
+Tested up to: 4.2
+Stable tag: 2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -36,6 +36,11 @@ There is much written about ABC Notation around the web. You can start [here](ht
 
 == Upgrade Notice ==
 
+= 2.1 =
+* Upgrade to use the abcjs 2.1 code.
+
+* Allow the shortcode to appear inside a <pre> tag.
+
 = 2.0 =
 * Upgrade to use the abcjs 2.0 code.
 
@@ -53,3 +58,9 @@ There is much written about ABC Notation around the web. You can start [here](ht
 
 = 1.12 =
 * Initial version of this plugin. (Version numbers are in sync with the version of abcjs that is included.)
+
+= 2.0 =
+* Upgrade abcjs version.
+
+= 2.1 =
+* Upgrade abcjs version.
