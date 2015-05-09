@@ -3,7 +3,7 @@
 Plugin Name: ABC Notation
 Plugin URI: http://wordpress.paulrosen.net/plugins/abc-notation
 Description: Include sheet music on your WordPress site by simply specifying the ABC style string in the shortcode <strong>[abcjs]</strong>. For a complete description of the syntax, see the <a href="http://wordpress.paulrosen.net/plugins/abc-notation">Plugin Site</a>.
-Version: 2.0
+Version: 2.1
 Author: Paul Rosen
 Author URI: http://paulrosen.net
 License: GPL version 2 or later - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
@@ -33,7 +33,7 @@ defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 add_action('wp_enqueue_scripts','abcjs_loader');
 
 function abcjs_loader() {
-	wp_enqueue_script( 'abcjs-plugin', plugins_url( '/abcjs_basic_2.0-min.js', __FILE__ ));
+	wp_enqueue_script( 'abcjs-plugin', plugins_url( '/abcjs_basic_2.1-min.js', __FILE__ ));
 }
 
 //-- Interpret the [abcjs] shortcode
@@ -45,6 +45,8 @@ function create_music( $atts, $content ) {
 	), $atts );
 
 	$content2 = preg_replace("&<br />\n&", "\x01", $content);
+	$content2 = preg_replace("&\r\n&", "\x01", $content2);
+	$content2 = preg_replace("&\n&", "\x01", $content2);
 	$content2 = preg_replace("-&#8221;-", "\\\"", $content2);
 	$content2 = preg_replace("-&#8217;-", "'", $content2);
 	$content2 = preg_replace("-&#8243;-", "\\\"", $content2);
